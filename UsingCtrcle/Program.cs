@@ -14,7 +14,7 @@ namespace UsingCtrcle
             //WhilePrac();
             //UseDoWhile();
             //DoWhilePrac();
-
+            UseFor();
         }
 
         static void UsWhile()
@@ -68,6 +68,17 @@ namespace UsingCtrcle
                 i++;
             } while (i<=n);
             Console.WriteLine("{0}的阶乘是：{1}", n, iResult);
+            Console.ReadLine();
+        }
+
+        static void UseFor()
+        {
+            int iSum = 0;
+            for (int iNum = 0; iNum <=100; iNum++)
+            {
+                iSum += iNum;
+            }
+            Console.WriteLine("1加到100的值是：{0}", iSum);
             Console.ReadLine();
         }
     }
