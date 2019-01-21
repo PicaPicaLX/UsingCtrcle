@@ -14,7 +14,9 @@ namespace UsingCtrcle
             //WhilePrac();
             //UseDoWhile();
             //DoWhilePrac();
-            UseFor();
+            //UseFor();
+            //ForPrac();
+
         }
 
         static void UsWhile()
@@ -81,5 +83,26 @@ namespace UsingCtrcle
             Console.WriteLine("1加到100的值是：{0}", iSum);
             Console.ReadLine();
         }
+
+        static void ForPrac()
+        {
+            int iSum1 = 0;
+            int iSum2 = 0;
+
+            for (int i = 1; i < 100; i=i+2 )
+            {
+                iSum1 += i;
+            }
+
+            for (int i = 2; i <= 100; i=i+2)
+            {
+                iSum2 += i;
+            }
+
+            Console.WriteLine("1到100之间的奇数和是：{0}\n1到100之间的偶数和是：{1}", iSum1, iSum2);
+            Console.ReadLine();
+        }
+
+
     }
 }
